@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="UTF-8">
+  <title>CurrencyConverter</title>
+  <style type="text/css">
+  .button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  }
+  .button:hover {background-color: #3e8e41}
+
+  .button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  }
+  </style>
+  
+  <script>
+  function autorun()
+  {
+    
+  }
+   if (document.addEventListener) document.addEventListener("DOMContentLoaded", autorun, false);
+   else if (document.attachEvent) document.attachEvent("onreadystatechange", autorun);
+   else window.onload = autorun;
+   
+   if (currency == "ZAR") {
+        x =Control document.getElementById("zar").value * 12;
+        document.getElementById("usd").value = Math.round(x);
+
+//usd to zar
+    else if (currency == "USD") {
+        x =Control document.getElementById("usd").value / 12;
+        document.getElementById("zar").value = Math.round(x);
+
+//zar to gbp
+else if (currency == "ZAR") {
+        x =Control document.getElementById("zar").value * 16;
+        document.getElementById("gbp").value = Math.round(x);
+
+//gbp to zar
+else if (currency == "gbp") {
+        x =Control document.getElementById("gbp").value / 16;
+        document.getElementById("zar").value = Math.round(x);
+
+//zar to eu
+else if (currency == "ZAR") {
+        x =Control document.getElementById("zar").value * 14;
+        document.getElementById("eu").value = Math.round(x);
+
+    }
+    else {
+        x = (document.getElementById("eu").value / 14;
+        document.getElementById("zar").value = Math.round(x);
+    }
+  }
+ }
+}
+</script> 
+</head>
+<body>
+ <select>
+  <option value="zar">Rand</option>
+  <option value="usd">US Dollar</option>
+  <option value="gbp">Pound</option>
+  <option value="eu">Euro</option>
+</select> 
+
+<h4>To :</h4>
+
+ <select>
+  <option value="zar">Rand</option>
+  <option value="usd">US Dollar</option>
+  <option value="gbp">Pound</option>
+  <option value="eu">Euro</option>
+</select> 
+
+</body>
+</html>
